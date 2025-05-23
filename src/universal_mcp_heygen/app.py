@@ -10,7 +10,8 @@ class HeygenApp(APIApplication):
         self.base_url = "https://api.heygen.com"
 
     def _get_headers(self) -> dict[str, Any]:
-        api_key = self.integration.get_credentials().get("api_key")
+        credentials = self.integration.get_credentials()
+        api_key = credentials.get("api_key") or credentials.get("API_KEY") or credentials.get("apiKey")
         return {
             "x-api-key": f"{api_key}",
             "Content-Type": "application/json",
