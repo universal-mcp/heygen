@@ -1,10 +1,10 @@
-# Heygen MCP Server
+# HeygenApp MCP Server
 
-An MCP Server for the Heygen API.
+An MCP Server for the HeygenApp API.
 
 ## 🛠️ Tool List
 
-This is automatically generated from OpenAPI schema for the Heygen API.
+This is automatically generated from OpenAPI schema for the HeygenApp API.
 
 
 | Tool | Description |
